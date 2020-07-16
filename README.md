@@ -4,7 +4,7 @@ Olá Dev.
 
 Este repositório foi criado para que você possa nos mostrar o que sabe tecnicamente. Esperamos que você nos surpreenda com sua experiência e criatividade.
 
-O teste em si, é simples, esperamos que você mostre o que sabe independente de frameworks/libs famosos como React, VueJs e Angular. Então queremos que você utilize Vanilla em tudo, ou tudo o que for possível, ou seja, queremos que você implemente uma solução sem utilizar jQuery, Boostrap ou afins. Queremos ver sua capacidade de criar algo sem a ajuda de facilitadores como o jQuery ou o Bootstrap. Não o julgaremos mal se você optar por utilizar libs como lodash ou underscore para facilitar sua vida no JS, ou utilizar preprocessadores como SCSS, LESS, Stylus, Babel, etc. Para processar seu código. Até recomendamos que você os utilize. O bom senso será de extrema importância.
+O teste em si, é simples, esperamos que você mostre o que sabe independente de frameworks/libs famosos como React, VueJs e Angular. Então queremos que você utilize Vanilla em tudo, ou tudo o que for possível, ou seja, queremos que você implemente uma solução sem utilizar jQuery, Bootstrap ou afins. Queremos ver sua capacidade de criar algo sem a ajuda de facilitadores como o jQuery ou o Bootstrap. Não o julgaremos mal se você optar por utilizar libs como lodash ou underscore para facilitar sua vida no JS, ou utilizar preprocessadores como SCSS, LESS, Stylus, Babel, etc. Para processar seu código. Até recomendamos que você os utilize. O bom senso será de extrema importância.
 
 Queremos que você nos mostre que consegue "sobreviver" sem Frameworks e tem criatividade suficiente para implementar suas próprias soluções ;)
 
