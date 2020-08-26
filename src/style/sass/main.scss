@@ -1,0 +1,183 @@
+$top-text-color: #fff;
+$content-text-color: #000;
+$footer-bg-color: #373737;
+
+@import "nav";
+@import "card/basic-card";
+@import "skeleton/card-github-skeleton";
+@import "skeleton/about-github-skeleton";
+@import "card/card-github";
+@import "footer";
+
+:root {
+  font-size: 60%;
+}
+
+@media (min-width: 500px) {
+  :root {
+    font-size: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    font-size: 100%;
+  }
+}
+
+html, body, #root {
+  margin: 0;
+  border: 0;
+  outline: none;
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 1rem 0;
+  word-break: break-word;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+section {
+  .section-title {
+    margin: 4rem 0;
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.flex {
+  display: flex;
+
+  &.flex-column {
+    flex-direction: column;
+  }
+
+  &.justify-content-center {
+    justify-content: center;
+  }
+
+  &.justify-content-around {
+    justify-content: space-around;
+  }
+
+  &.justify-content-between {
+    justify-content: space-between;
+  }
+
+  &.align-center {
+    align-items: center;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+#top {
+  height: 45rem;
+  background-image: url("../assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  @media (min-width: 768px) {
+    height: 58rem;
+  }
+
+  .main-title {
+    width: 100%;
+    word-break: break-word;
+    z-index: 1;
+
+    .title {
+      font-size: 4rem;
+      color: $top-text-color;
+    }
+
+    .subtitle {
+      font-size: 2rem;
+      color: $top-text-color;
+    }
+  }
+
+  #social-media {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+
+    a {
+      width: 60px;
+      z-index: 2;
+      display: block;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    #linkedin-link {
+      width: 50px;
+    }
+
+    #facebook-link {
+      width: 45px;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.content {
+  grid-area: content;
+
+  #about {
+    box-sizing: border-box;
+    color: $content-text-color;
+    padding: 2rem 4rem 6rem 4rem;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  #challenge {
+    box-sizing: border-box;
+    background-color: #EBF6EE;
+    padding: 2rem 4rem 6rem 4rem;
+  }
+}

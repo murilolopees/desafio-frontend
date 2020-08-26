@@ -1,0 +1,34 @@
+#about-github-skeleton {
+  width: 100%;
+
+  .about-content-skeleton {
+    margin: auto;
+    width: 100%;
+    height: 200px;
+
+    background-image:
+            linear-gradient( 100deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 80% ),
+            linear-gradient( lightgray 20px, transparent 0 ),
+            linear-gradient( lightgray 20px, transparent 0 );
+
+    background-repeat: repeat-y;
+
+    background-size:
+            50px 200px,
+            100% 30px;
+
+    background-position:
+            0 0,
+            0 30px;
+
+    animation: shineAbout 1s infinite;
+  }
+
+  @keyframes shineAbout {
+    to {
+      background-position:
+              100% 0,
+              0 30px
+    }
+  }
+}

@@ -1,0 +1,139 @@
+$border-color: #9AD0AA;
+$text-color: #9AD0AA;
+
+#card-github {
+  @extend .basic-card;
+  max-width: 600px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+  -webkit-animation: fadeInFromNone 0.5s ease-out;
+  -moz-animation: fadeInFromNone 0.5s ease-out;
+  -o-animation: fadeInFromNone 0.5s ease-out;
+  animation: fadeInFromNone 0.5s ease-out;
+
+  @keyframes fadeInFromNone {
+    0% {
+      display: none;
+      opacity: 0;
+    }
+
+    1% {
+      display: block;
+      opacity: 0;
+    }
+
+    100% {
+      display: flex;
+      opacity: 1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    width: 600px;
+    min-height: 20rem;
+  }
+
+  .img-container {
+    width: 100%;
+    max-width: 150px;
+
+    @media (min-width: 768px) {
+      width: 30%;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 100%;
+    }
+
+    #github-link {
+      margin-top: 0.6rem;
+      text-align: center;
+      font-weight: 700;
+      text-decoration: none;
+      color: #000;
+      font-size: 0.7rem;
+    }
+  }
+
+  .info-container {
+    width: 100%;
+    padding: 0;
+    box-sizing: border-box;
+    margin-top: 2rem;
+
+    @media (min-width: 768px) {
+      padding-left: 2rem;
+      width: 70%;
+      margin-top: 1rem;
+    }
+
+    .info-text {
+      text-align: center;
+
+      @media (min-width: 768px) {
+        text-align: left;
+      }
+    }
+
+    .actions {
+      margin-top: 2.5rem;
+      justify-content: space-around;
+      flex-direction: column;
+
+      @media (min-width: 768px) {
+        justify-content: space-between;
+        flex-direction: row;
+      }
+
+      button {
+        background-color: #fff;
+        border: 2px solid $border-color;
+        padding: 0.9rem 1rem;
+        border-radius: 2px;
+        color: $text-color;
+        cursor: pointer;
+        outline: none;
+        margin-top: 1rem;
+
+        @media (min-width: 768px) {
+          padding: 0.4rem 1rem;
+        }
+
+        span {
+          font-size: 1.5rem;
+          font-weight: 700;
+
+          @media (min-width: 768px) {
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+
+  #repositories-list,
+  #starred-list {
+    width: 100%;
+    padding: 2rem 2rem 0 2rem;
+
+    table {
+      width: 100%;
+
+      tr:nth-child(odd) {
+        background-color: #D2EEE0;
+      }
+    }
+
+    .no-results {
+      font-size: 0.7rem;
+    }
+  }
+}
