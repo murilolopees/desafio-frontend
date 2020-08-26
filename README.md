@@ -1,4 +1,4 @@
-# Frontend Chalenge - Qconcursos - Murilo Lopes
+# Frontend Challenge - Qconcursos - Murilo Lopes
 
 In the root folder run
 
